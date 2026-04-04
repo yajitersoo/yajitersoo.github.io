@@ -504,7 +504,7 @@ body {
 .profile-heading {
   font-size: clamp(1.8rem, 8vw, 3rem) !important;
   line-height: 1.18;
-  max-width: 100% !important;
+  max-width: 800% !important;
 }
 
 .profile-mini-card h3 {
