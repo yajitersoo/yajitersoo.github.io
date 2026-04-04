@@ -71,15 +71,57 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .profile-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+  }
+
+  .profile-heading {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 900px) {
-  .profile-grid {
+  .profile-layout {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 32px;
+  }
+
+  .profile-right {
+    max-width: 420px;
+    padding-top: 0;
+  }
+
+  .profile-heading {
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 640px) {
   .profile-section {
-    padding: 56px 0;
+    padding: 64px 0;
+  }
+
+  .profile-heading {
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .profile-text p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+
+  .profile-mini-card {
+    padding: 20px;
+  }
+
+  .profile-mini-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .short-line {
+    max-width: 100%;
   }
 }
