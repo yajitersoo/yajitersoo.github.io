@@ -58,6 +58,7 @@ video {
   font-size: clamp(2rem, 4.2vw, 2.9rem);
   line-height: 1.12;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .section-title {
@@ -148,6 +149,12 @@ video {
 
 .hero-section {
   padding: 80px 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-grid {
@@ -166,7 +173,7 @@ video {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #2563eb;
+  color: #93c5fd;
   margin-bottom: 16px;
 }
 
@@ -174,7 +181,7 @@ video {
   font-size: 1.05rem;
   max-width: 640px;
   margin-bottom: 28px;
-  color: #374151;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .hero-actions {
@@ -184,21 +191,22 @@ video {
 }
 
 .hero-card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 18px;
   padding: 28px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(10px);
 }
 
 .hero-card h3 {
   font-size: 1.2rem;
   margin-bottom: 12px;
-  color: #ea580c;
+  color: #f8fafc;
 }
 
 .hero-card p {
-  color: #475569;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 /* =========================
