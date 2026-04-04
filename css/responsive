@@ -70,3 +70,16 @@
     padding: 22px;
   }
 }
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-section {
+    padding: 56px 0;
+  }
+}
