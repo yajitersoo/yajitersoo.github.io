@@ -609,15 +609,14 @@ video {
 
 .selected-project-image {
   width: 100%;
-  height: 190px;
-  overflow: hidden;
+  background-color: #e5e7eb;
 }
 
-.selected-project-image {
+.selected-project-image img {
   width: 100%;
-  height: 210px;
-  overflow: hidden;
-  background-color: #e5e7eb;
+  height: auto;
+  display: block;
+  transition: transform 0.35s ease;
 }
 
 .selected-project-card:hover .selected-project-image img {
@@ -684,9 +683,7 @@ video {
     gap: 14px;
   }
 
-  .selected-project-image {
-    height: 170px;
-  }
+
 
   .selected-project-body {
     padding: 15px;
