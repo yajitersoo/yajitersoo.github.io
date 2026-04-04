@@ -1324,6 +1324,72 @@ video {
   color: #111827;
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .roles-impact-section {
+    padding: 72px 0;
+  }
+
+  .roles-impact-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .roles-impact-header {
+    margin-bottom: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .roles-impact-section {
+    padding: 52px 0;
+  }
+
+  .roles-impact-title {
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .roles-impact-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .role-impact-card {
+    padding: 22px 20px 20px;
+    border-radius: 16px;
+  }
+
+  .role-impact-role {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .role-impact-org {
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .role-impact-divider {
+    margin: 14px 0;
+  }
+
+  .role-impact-body {
+    gap: 16px;
+  }
+
+  .role-impact-body p {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .role-impact-tools {
+    font-size: 0.87rem;
+    line-height: 1.65;
+  }
+}
+
 /* =========================
    TOOLS AND TECHNOLOGIES
 ========================= */
