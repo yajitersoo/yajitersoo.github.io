@@ -1324,6 +1324,123 @@ video {
   color: #111827;
 }
 
+/* =========================
+   TOOLS AND TECHNOLOGIES
+========================= */
+
+.tools-stack-section {
+  padding: 88px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tools-stack-header {
+  max-width: 940px;
+  margin: 0 auto 36px;
+}
+
+.tools-stack-title {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.tools-stack-intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #334155;
+  max-width: 920px;
+}
+
+.tools-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.tool-stack-card {
+  background-color: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.tool-stack-card-title {
+  font-size: 1.08rem;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.tool-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tool-stack-tags span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #ffffff;
+  border: 1px solid #dbe1e8;
+  font-size: 0.87rem;
+  line-height: 1;
+  color: #334155;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .tools-stack-section {
+    padding: 72px 0;
+  }
+
+  .tools-stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .tools-stack-section {
+    padding: 52px 0;
+  }
+
+  .tools-stack-title {
+    font-size: 1.4rem;
+    line-height: 1.18;
+  }
+
+  .tools-stack-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .tool-stack-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .tool-stack-card-title {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  .tool-stack-tags {
+    gap: 8px;
+  }
+
+  .tool-stack-tags span {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .roles-impact-section {
