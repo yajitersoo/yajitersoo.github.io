@@ -428,3 +428,93 @@ body {
     max-width: 100%;
   }
 }
+
+
+/* FORCE RESPONSIVE LAYOUT */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(1120px, 92%);
+}
+
+.hero-grid,
+.capabilities-grid,
+.profile-layout {
+  width: 100%;
+}
+
+.hero-grid > *,
+.capabilities-grid > *,
+.profile-layout > * {
+  min-width: 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 32px !important;
+  align-items: center;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 24px !important;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 32px !important;
+  align-items: start;
+}
+
+.profile-left,
+.profile-right,
+.hero-text,
+.hero-card,
+.capability-card,
+.profile-mini-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 0 !important;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 8vw, 3rem) !important;
+  line-height: 1.15;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
+  line-height: 1.2;
+}
+
+.profile-heading {
+  font-size: clamp(1.8rem, 8vw, 3rem) !important;
+  line-height: 1.18;
+  max-width: 100% !important;
+}
+
+.profile-mini-card h3 {
+  font-size: clamp(1.05rem, 4vw, 1.5rem);
+  line-height: 1.3;
+}
+
+.profile-mini-card p,
+.capability-card p,
+.hero-description,
+.profile-text p {
+  word-wrap: break-word;
+}
