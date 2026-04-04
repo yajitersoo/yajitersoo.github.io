@@ -136,3 +136,59 @@ a {
   color: #475569;
   font-size: 0.95rem;
 }
+
+.capabilities-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.section-header {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.section-kicker {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  font-size: 1rem;
+  color: #475569;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.capability-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.capability-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.capability-card p {
+  color: #475569;
+  font-size: 0.98rem;
+}
