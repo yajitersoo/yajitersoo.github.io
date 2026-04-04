@@ -17,8 +17,11 @@ a {
 }
 
 .container {
-  width: min(1120px, 90%);
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .site-header {
@@ -344,12 +347,15 @@ body {
 
 @media (max-width: 640px) {
   .container {
-    width: 92%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .site-header {
-    padding: 16px 0;
+  .site-header .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
 
   .nav-menu {
     display: flex;
@@ -480,10 +486,10 @@ body {
 .hero-card,
 .capability-card,
 .profile-mini-card {
-  width: 100%;
-  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
 }
-
 .profile-right {
   display: flex;
   flex-direction: column;
@@ -503,8 +509,8 @@ body {
 
 .profile-heading {
   font-size: clamp(1.8rem, 8vw, 3rem) !important;
-  line-height: 1.18;
-  max-width: 800% !important;
+  line-height: 1.22;
+  max-width: 100% !important;
 }
 
 .profile-mini-card h3 {
