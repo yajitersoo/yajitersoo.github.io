@@ -1508,4 +1508,57 @@ video {
     font-size: 0.87rem;
     line-height: 1.65;
   }
+
+
+   /* FORCE ROLES IMPACT TO STACK ON TABLET AND MOBILE */
+
+@media (max-width: 900px) {
+  .roles-impact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .role-impact-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .roles-impact-section {
+    padding: 52px 0;
+  }
+
+  .roles-impact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .role-impact-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 20px 20px;
+    border-radius: 16px;
+  }
+
+  .role-impact-role {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .role-impact-org {
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .role-impact-body p {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .role-impact-tools {
+    font-size: 0.87rem;
+    line-height: 1.65;
+  }
+}
 }
