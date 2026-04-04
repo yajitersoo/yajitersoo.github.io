@@ -1562,3 +1562,136 @@ video {
   }
 }
 }
+
+/* =========================
+   CONTACT / ENGAGEMENT
+========================= */
+
+.contact-cta-section {
+  padding: 88px 0;
+  background-color: #0f172a;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-cta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.9fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-cta-kicker {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  margin-bottom: 12px;
+}
+
+.contact-cta-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.contact-cta-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.contact-cta-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.contact-cta-right {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-info-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.contact-info-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+
+.contact-info-value {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.contact-info-text {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .contact-cta-section {
+    padding: 72px 0;
+  }
+
+  .contact-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .contact-cta-section {
+    padding: 52px 0;
+  }
+
+  .contact-cta-title {
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .contact-cta-text {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .contact-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-cta-actions .btn {
+    width: 100%;
+  }
+
+  .contact-info-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .contact-info-value,
+  .contact-info-text {
+    font-size: 0.93rem;
+  }
+}
