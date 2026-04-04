@@ -1239,3 +1239,153 @@ video {
     line-height: 1.65;
   }
 }
+
+/* =========================
+   ROLES AND IMPACT CARDS
+========================= */
+
+.roles-impact-section {
+  padding: 88px 0;
+  background-color: #f7f8fa;
+  border-top: 1px solid #e5e7eb;
+}
+
+.roles-impact-header {
+  max-width: 980px;
+  margin: 0 auto 40px;
+}
+
+.roles-impact-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.roles-impact-intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #334155;
+  max-width: 980px;
+}
+
+.roles-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.role-impact-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.role-impact-role {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.role-impact-org {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #c2410c;
+}
+
+.role-impact-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 16px 0;
+}
+
+.role-impact-body {
+  display: grid;
+  gap: 20px;
+}
+
+.role-impact-body p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.role-impact-tools {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .roles-impact-section {
+    padding: 72px 0;
+  }
+
+  .roles-impact-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .roles-impact-header {
+    margin-bottom: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .roles-impact-section {
+    padding: 52px 0;
+  }
+
+  .roles-impact-title {
+    font-size: 1.45rem;
+    line-height: 1.18;
+  }
+
+  .roles-impact-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .role-impact-card {
+    padding: 22px 20px 20px;
+    border-radius: 16px;
+  }
+
+  .role-impact-role {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .role-impact-org {
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .role-impact-divider {
+    margin: 14px 0;
+  }
+
+  .role-impact-body {
+    gap: 16px;
+  }
+
+  .role-impact-body p {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .role-impact-tools {
+    font-size: 0.87rem;
+    line-height: 1.65;
+  }
+}
