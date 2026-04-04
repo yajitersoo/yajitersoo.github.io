@@ -192,3 +192,31 @@ a {
   color: #475569;
   font-size: 0.98rem;
 }
+
+.profile-section {
+  padding: 80px 0;
+  background-color: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.profile-intro {
+  max-width: 360px;
+}
+
+.profile-content {
+  display: grid;
+  gap: 20px;
+}
+
+.profile-content p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.8;
+}
