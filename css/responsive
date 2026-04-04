@@ -45,3 +45,28 @@
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 900px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .capabilities-section {
+    padding: 56px 0;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .capability-card {
+    padding: 22px;
+  }
+}
