@@ -80,10 +80,6 @@ function activateCard(card) {
     viewerOpenLink.href = live || "#";
   }
 
-  const viewerSection = document.getElementById("live-viewer");
-  if (viewerSection) {
-    viewerSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
 }
 
 launchCards.forEach((card) => {
