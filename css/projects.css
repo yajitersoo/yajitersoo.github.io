@@ -194,12 +194,12 @@ button.project-modal-card {
 .project-viewer-dialog {
   position: relative;
   z-index: 2;
-  width: min(1200px, calc(100vw - 48px));
-  height: min(88vh, 900px);
-  margin: 24px auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   background-color: #ffffff;
-  border-radius: 22px;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+  border-radius: 0;
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -207,7 +207,7 @@ button.project-modal-card {
 
 .project-viewer-close {
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 16px;
   z-index: 3;
   width: 44px;
@@ -221,8 +221,9 @@ button.project-modal-card {
 }
 
 .project-viewer-header {
-  padding: 24px 24px 12px;
+  padding: 20px 24px 12px;
   border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
 }
 
 .project-viewer-title {
@@ -260,8 +261,8 @@ button.project-modal-card {
   min-height: 0;
   background-color: #f8fafc;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 .project-viewer-frame,
@@ -275,6 +276,7 @@ button.project-modal-card {
 
 .project-viewer-image {
   object-fit: contain;
+  background-color: #f8fafc;
 }
 
 .project-viewer-frame.is-visible,
@@ -298,7 +300,6 @@ button.project-modal-card {
   }
 }
 
-/* Tablet */
 @media (max-width: 900px) {
   .projects-modal-hero,
   .projects-modal-category {
@@ -308,15 +309,8 @@ button.project-modal-card {
   .projects-modal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .project-viewer-dialog {
-    width: calc(100vw - 24px);
-    height: calc(100vh - 24px);
-    margin: 12px auto;
-  }
 }
 
-/* Mobile */
 @media (max-width: 640px) {
   .projects-modal-hero,
   .projects-modal-category {
@@ -362,23 +356,12 @@ button.project-modal-card {
     font-size: 0.76rem;
   }
 
-  .project-viewer-dialog {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    border-radius: 0;
-  }
-
   .project-viewer-header {
-    padding: 20px 16px 12px;
+    padding: 16px 16px 10px;
   }
 
   .project-viewer-title {
     padding-right: 48px;
-  }
-
-  .project-viewer-content {
-    min-height: 0;
   }
 
   .project-viewer-close {
