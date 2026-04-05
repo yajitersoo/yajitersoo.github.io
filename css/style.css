@@ -3774,3 +3774,241 @@ button.home-project-card-final {
     font-size: 1.15rem;
   }
 }
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page-final {
+  background-color: #ffffff;
+}
+
+.contact-hero-final {
+  padding: 88px 0;
+  background-color: #f7f8fa;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-kicker-final,
+.contact-section-kicker-final,
+.contact-option-label-final {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.contact-title-final {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  max-width: 980px;
+  margin-bottom: 18px;
+}
+
+.contact-intro-final,
+.contact-body-final {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
+  max-width: 920px;
+}
+
+.contact-options-final,
+.contact-collaboration-final,
+.contact-cta-final {
+  padding: 88px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-options-final {
+  background-color: #ffffff;
+}
+
+.contact-collaboration-final {
+  background-color: #f7f8fa;
+}
+
+.contact-cta-final {
+  background-color: #ffffff;
+}
+
+.contact-options-grid-final {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.contact-option-card-final {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+}
+
+.contact-option-card-final h2 {
+  font-size: 1.08rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.contact-option-card-final p {
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+.contact-option-link-final {
+  display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-collaboration-grid-final {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-section-title-final {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.16;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.contact-collaboration-main-final .contact-body-final + .contact-body-final {
+  margin-top: 14px;
+}
+
+.contact-collaboration-side-final {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-mini-card-final {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+}
+
+.contact-mini-card-final h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.contact-list-final {
+  margin: 0;
+  padding-left: 18px;
+  color: #475569;
+}
+
+.contact-list-final li {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.contact-cta-card-final {
+  background-color: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+  max-width: 940px;
+}
+
+.contact-cta-actions-final {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-option-card-final,
+  .contact-mini-card-final,
+  .contact-cta-card-final {
+    transition: transform 0.24s ease, box-shadow 0.24s ease;
+  }
+
+  .contact-option-card-final:hover,
+  .contact-mini-card-final:hover,
+  .contact-cta-card-final:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .contact-hero-final,
+  .contact-options-final,
+  .contact-collaboration-final,
+  .contact-cta-final {
+    padding: 72px 0;
+  }
+
+  .contact-options-grid-final,
+  .contact-collaboration-grid-final {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .contact-hero-final,
+  .contact-options-final,
+  .contact-collaboration-final,
+  .contact-cta-final {
+    padding: 52px 0;
+  }
+
+  .contact-title-final {
+    font-size: 1.72rem;
+    line-height: 1.18;
+  }
+
+  .contact-section-title-final {
+    font-size: 1.4rem;
+    line-height: 1.18;
+  }
+
+  .contact-intro-final,
+  .contact-body-final,
+  .contact-option-card-final p,
+  .contact-list-final li {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .contact-option-card-final,
+  .contact-mini-card-final,
+  .contact-cta-card-final {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .contact-option-card-final h2,
+  .contact-mini-card-final h3 {
+    font-size: 1rem;
+  }
+}
