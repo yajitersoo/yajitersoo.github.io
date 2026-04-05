@@ -1,14 +1,15 @@
-const modal = document.getElementById("projectViewerModal");
-const modalFrame = document.getElementById("modalProjectFrame");
-const modalImage = document.getElementById("modalProjectImage");
-const modalTitle = document.getElementById("modalProjectTitle");
-const modalSummary = document.getElementById("modalProjectSummary");
-const modalOpenLink = document.getElementById("modalProjectOpenLink");
-const modalCloseBtn = document.getElementById("modalCloseBtn");
+const modalFinal = document.getElementById("projectViewerModalFinal");
+const modalFrameFinal = document.getElementById("modalProjectFrameFinal");
+const modalImageFinal = document.getElementById("modalProjectImageFinal");
+const modalTitleFinal = document.getElementById("modalProjectTitleFinal");
+const modalSummaryFinal = document.getElementById("modalProjectSummaryFinal");
+const modalOpenLinkFinal = document.getElementById("modalProjectOpenLinkFinal");
+const modalCloseBtnFinal = document.getElementById("modalCloseBtnFinal");
 
-const launchCards = document.querySelectorAll(".project-launch-card");
+const launchCardsFinal = document.querySelectorAll(".project-launch-card-final");
+const rowButtonsFinal = document.querySelectorAll(".projects-row-btn-final");
 
-function isImageUrl(url) {
+function isImageUrlFinal(url) {
   if (!url) return false;
   return (
     url.endsWith(".png") ||
@@ -19,10 +20,10 @@ function isImageUrl(url) {
   );
 }
 
-function getEmbedUrl(url) {
+function getEmbedUrlFinal(url) {
   if (!url) return "";
 
-  if (isImageUrl(url) || url.endsWith(".pdf")) {
+  if (isImageUrlFinal(url) || url.endsWith(".pdf")) {
     return url;
   }
 
@@ -59,65 +60,83 @@ function getEmbedUrl(url) {
   return url;
 }
 
-function clearViewer() {
-  modalFrame.classList.remove("is-visible");
-  modalImage.classList.remove("is-visible");
-  modalFrame.src = "";
-  modalImage.src = "";
+function clearViewerFinal() {
+  modalFrameFinal.classList.remove("is-visible");
+  modalImageFinal.classList.remove("is-visible");
+  modalFrameFinal.src = "";
+  modalImageFinal.src = "";
 }
 
-function openModalViewer(card) {
+function openModalViewerFinal(card) {
   const title = card.dataset.title || "Project Viewer";
   const summary = card.dataset.summary || "Live product preview.";
   const live = card.dataset.live || "#";
-  const embed = getEmbedUrl(live);
+  const embed = getEmbedUrlFinal(live);
 
-  document.querySelectorAll(".project-launch-card").forEach((item) => {
+  document.querySelectorAll(".project-launch-card-final").forEach((item) => {
     item.classList.remove("is-active");
   });
   card.classList.add("is-active");
 
-  modalTitle.textContent = title;
-  modalSummary.textContent = summary;
-  modalOpenLink.href = live;
+  modalTitleFinal.textContent = title;
+  modalSummaryFinal.textContent = summary;
+  modalOpenLinkFinal.href = live;
 
-  clearViewer();
+  clearViewerFinal();
 
-  if (isImageUrl(embed)) {
-    modalImage.src = embed;
-    modalImage.classList.add("is-visible");
+  if (isImageUrlFinal(embed)) {
+    modalImageFinal.src = embed;
+    modalImageFinal.classList.add("is-visible");
   } else {
-    modalFrame.src = embed;
-    modalFrame.classList.add("is-visible");
+    modalFrameFinal.src = embed;
+    modalFrameFinal.classList.add("is-visible");
   }
 
-  modal.classList.add("is-open");
-  modal.setAttribute("aria-hidden", "false");
+  modalFinal.classList.add("is-open");
+  modalFinal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
 }
 
-function closeModalViewer() {
-  modal.classList.remove("is-open");
-  modal.setAttribute("aria-hidden", "true");
+function closeModalViewerFinal() {
+  modalFinal.classList.remove("is-open");
+  modalFinal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
-  clearViewer();
+  clearViewerFinal();
 }
 
-launchCards.forEach((card) => {
-  card.addEventListener("click", () => openModalViewer(card));
+launchCardsFinal.forEach((card) => {
+  card.addEventListener("click", () => openModalViewerFinal(card));
 });
 
-modalCloseBtn.addEventListener("click", closeModalViewer);
+modalCloseBtnFinal.addEventListener("click", closeModalViewerFinal);
 
-modal.addEventListener("click", (event) => {
+modalFinal.addEventListener("click", (event) => {
   const target = event.target;
   if (target instanceof HTMLElement && target.dataset.closeModal === "true") {
-    closeModalViewer();
+    closeModalViewerFinal();
   }
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    closeModalViewer();
+    closeModalViewerFinal();
   }
+});
+
+rowButtonsFinal.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetId = button.dataset.target;
+    const direction = button.dataset.direction;
+    const track = document.getElementById(targetId);
+
+    if (!track) return;
+
+    const viewport = track.parentElement;
+    const scrollAmount = viewport.clientWidth;
+
+    track.scrollBy({
+      left: direction === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth"
+    });
+  });
 });
