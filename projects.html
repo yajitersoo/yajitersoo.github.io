@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Tersoo Yaji</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
 <body>
 
@@ -20,347 +21,719 @@
     </div>
   </header>
 
-  <main>
-    <section class="projects-v2-hero">
+  <main class="projects-page">
+
+    <section class="projects-hero">
       <div class="container">
-        <p class="projects-v2-kicker">Projects</p>
-        <h1 class="projects-v2-title">
-          Project portfolio organized by technical category and output type.
+        <p class="projects-kicker">Projects</p>
+        <h1 class="projects-title">
+          Portfolio of maps, dashboards, reports, presentations, videos, forms, and Python-based analytical work.
         </h1>
-        <p class="projects-v2-intro">
-          This page brings together maps, dashboards, reports, presentations, infographics, videos, forms, and Python-based work across information management, analytics, GIS, reporting systems, and technical workflows.
+        <p class="projects-intro">
+          Explore products by category, then click any project card to preview it inside the page. Where direct embedding is restricted by the source platform, use the “Open Live Product” button to view it in a new tab.
         </p>
 
-        <div class="projects-v2-nav">
-          <a href="#maps" class="projects-v2-chip">Maps</a>
-          <a href="#static-dashboards" class="projects-v2-chip">Static Dashboards</a>
-          <a href="#interactive-dashboards" class="projects-v2-chip">Interactive Dashboards</a>
-          <a href="#reports" class="projects-v2-chip">Reports</a>
-          <a href="#presentations" class="projects-v2-chip">Presentations</a>
-          <a href="#infographics" class="projects-v2-chip">Infographics</a>
-          <a href="#videos" class="projects-v2-chip">Videos</a>
-          <a href="#forms" class="projects-v2-chip">Forms</a>
-          <a href="#python" class="projects-v2-chip">Python</a>
+        <div class="projects-chip-row">
+          <a href="#maps" class="projects-chip">Maps</a>
+          <a href="#static-dashboards" class="projects-chip">Static Dashboards</a>
+          <a href="#interactive-dashboards" class="projects-chip">Interactive Dashboards</a>
+          <a href="#reports" class="projects-chip">Reports</a>
+          <a href="#presentations" class="projects-chip">Presentations</a>
+          <a href="#infographics" class="projects-chip">Infographics</a>
+          <a href="#videos" class="projects-chip">Videos</a>
+          <a href="#forms" class="projects-chip">Forms</a>
+          <a href="#python" class="projects-chip">Python</a>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category" id="maps">
+    <section class="projects-viewer-section" id="live-viewer">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Maps</p>
-          <h2 class="projects-v2-section-title">Geospatial products and mapping outputs.</h2>
+        <div class="projects-viewer-head">
+          <p class="projects-section-kicker">Live Product Viewer</p>
+          <h2 class="projects-viewer-title" id="viewerTitle">Select a project to preview it here.</h2>
+          <p class="projects-viewer-summary" id="viewerSummary">
+            Click any product card below to load the selected project inside this page.
+          </p>
+
+          <div class="projects-viewer-actions">
+            <a id="viewerOpenLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Live Product</a>
+          </div>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card">
-            <div class="projects-v2-image">
+        <div class="projects-viewer-status" id="viewerStatus">
+          Some external platforms may block embedding. If the preview does not load, use “Open Live Product”.
+        </div>
+
+        <div class="projects-viewer-frame-wrap">
+          <iframe
+            id="viewerFrame"
+            class="projects-viewer-frame"
+            src=""
+            title="Project viewer"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-category" id="maps">
+      <div class="container">
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Maps</p>
+          <h2 class="projects-section-title">Geospatial products and mapping outputs.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card"
+            type="button"
+            data-title="Alleged Tomahawk Strikes in Nigeria"
+            data-summary="Incident mapping and spatial interpretation for situational awareness."
+            data-embed="assets/images/projects/Alleged Tomahawk Strikes in Nigeria (December, 2025) (2)_001.png"
+            data-live="assets/images/projects/Alleged Tomahawk Strikes in Nigeria (December, 2025) (2)_001.png"
+          >
+            <div class="project-card-media">
               <img src="assets/images/projects/Alleged Tomahawk Strikes in Nigeria (December, 2025) (2)_001.png" alt="Alleged Tomahawk Strikes in Nigeria map preview" />
             </div>
-            <div class="projects-v2-body">
+            <div class="project-card-body">
               <h3>Alleged Tomahawk Strikes in Nigeria</h3>
               <p>Incident mapping and spatial interpretation for situational awareness.</p>
-              <div class="projects-v2-tags">
+              <div class="project-card-tags">
                 <span>ArcGIS</span>
                 <span>Mapping</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card">
-            <div class="projects-v2-image">
+          <button
+            class="project-card project-launch-card"
+            type="button"
+            data-title="Relocation Areas 2025 and EO Incidents"
+            data-summary="Spatial overview linking relocation areas and explosive ordnance incident patterns."
+            data-embed="assets/images/projects/Relocation Areas 2025 & EO Incidents.png"
+            data-live="assets/images/projects/Relocation Areas 2025 & EO Incidents.png"
+          >
+            <div class="project-card-media">
               <img src="assets/images/projects/Relocation Areas 2025 & EO Incidents.png" alt="Relocation areas and EO incidents map preview" />
             </div>
-            <div class="projects-v2-body">
+            <div class="project-card-body">
               <h3>Relocation Areas 2025 and EO Incidents</h3>
               <p>Spatial overview linking relocation areas and explosive ordnance incident patterns.</p>
-              <div class="projects-v2-tags">
+              <div class="project-card-tags">
                 <span>ArcGIS Pro</span>
                 <span>Spatial Analysis</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card">
-            <div class="projects-v2-image">
+          <button
+            class="project-card project-launch-card"
+            type="button"
+            data-title="Cluster Munition Analysis Product"
+            data-summary="Hazard-focused visual output supporting analytical review and reporting."
+            data-embed="assets/images/projects/Cluster Munition.png"
+            data-live="assets/images/projects/Cluster Munition.png"
+          >
+            <div class="project-card-media">
               <img src="assets/images/projects/Cluster Munition.png" alt="Cluster munition map preview" />
             </div>
-            <div class="projects-v2-body">
+            <div class="project-card-body">
               <h3>Cluster Munition Analysis Product</h3>
               <p>Hazard-focused visual output supporting analytical review and reporting.</p>
-              <div class="projects-v2-tags">
+              <div class="project-card-tags">
                 <span>GIS</span>
                 <span>Hazard Analysis</span>
               </div>
             </div>
-          </article>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category projects-v2-alt" id="static-dashboards">
+    <section class="projects-category projects-category-alt" id="static-dashboards">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Static Dashboards</p>
-          <h2 class="projects-v2-section-title">Dashboard snapshots and non-interactive visual products.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Static Dashboards</p>
+          <h2 class="projects-section-title">Dashboard snapshots and non-interactive visual products.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Static Dashboard Example 1</h3>
-              <p>Replace with your dashboard screenshot, title, and short description.</p>
-              <div class="projects-v2-tags">
-                <span>Power BI</span>
-                <span>Static View</span>
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Static Dashboard Snapshot 01"
+            data-summary="Static dashboard product shared as a viewable file."
+            data-live="https://drive.google.com/file/d/1PgXrRBbtlHFMWrbwMU0nfbI1poiOACLl/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-file"><span>STATIC</span></div>
+            <div class="project-card-body">
+              <h3>Static Dashboard Snapshot 01</h3>
+              <p>Static dashboard product shared as a viewable file.</p>
+              <div class="project-card-tags">
+                <span>Dashboard</span>
+                <span>Static</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Static Dashboard Example 2</h3>
-              <p>Replace with another non-interactive dashboard product or image export.</p>
-              <div class="projects-v2-tags">
-                <span>Excel</span>
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Static Dashboard Snapshot 02"
+            data-summary="Additional static dashboard export for reporting and presentation."
+            data-live="https://drive.google.com/file/d/1vACQEwEr3kaGEIWi9_c7b50UxYVKO8At/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-file"><span>STATIC</span></div>
+            <div class="project-card-body">
+              <h3>Static Dashboard Snapshot 02</h3>
+              <p>Additional static dashboard export for reporting and presentation.</p>
+              <div class="project-card-tags">
+                <span>Power BI</span>
+                <span>Export</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Static Dashboard Snapshot 03"
+            data-summary="Static non-interactive visual snapshot."
+            data-live="https://drive.google.com/file/d/1NuY9X3Rj14F-ADKs-0lQB2jpCBSPWrV9/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-file"><span>STATIC</span></div>
+            <div class="project-card-body">
+              <h3>Static Dashboard Snapshot 03</h3>
+              <p>Static non-interactive visual snapshot.</p>
+              <div class="project-card-tags">
+                <span>Visualization</span>
                 <span>Monitoring</span>
               </div>
             </div>
-          </article>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category" id="interactive-dashboards">
+    <section class="projects-category" id="interactive-dashboards">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Interactive Dashboards</p>
-          <h2 class="projects-v2-section-title">Live or embedded dashboard experiences.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Interactive Dashboards</p>
+          <h2 class="projects-section-title">Live dashboards and interactive decision-support interfaces.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Interactive Dashboard Example 1</h3>
-              <p>Add your live Power BI, ArcGIS Dashboard, or other interactive dashboard link here.</p>
-              <div class="projects-v2-tags">
-                <span>Power BI</span>
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Reference Maps"
+            data-summary="ArcGIS Experience reference mapping environment."
+            data-live="https://experience.arcgis.com/experience/4166a5bbdd804b0f8a106952999eb7cb/page/Reference-Maps/"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>Reference Maps</h3>
+              <p>ArcGIS Experience reference mapping environment.</p>
+              <div class="project-card-tags">
+                <span>ArcGIS Experience</span>
                 <span>Interactive</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Interactive Dashboard Example 2</h3>
-              <p>Use this for any hosted dashboard with filters, navigation, and dynamic visuals.</p>
-              <div class="projects-v2-tags">
-                <span>ArcGIS</span>
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Response Activity Dashboard - GGV 2024"
+            data-summary="ArcGIS Experience dashboard for response activity visualization."
+            data-live="https://experience.arcgis.com/experience/4166a5bbdd804b0f8a106952999eb7cb/page/Response-Activity-Dashboard/"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>Response Activity Dashboard - GGV 2024</h3>
+              <p>ArcGIS Experience dashboard for response activity visualization.</p>
+              <div class="project-card-tags">
+                <span>ArcGIS Experience</span>
                 <span>Dashboard</span>
               </div>
             </div>
-          </article>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="5Ws Response Dashboard 2023"
+            data-summary="Tracks GBV AoR partner activities and HRP-related indicators."
+            data-live="https://app.powerbi.com/view?r=eyJrIjoiNGRjYjc2ZTEtMGU5MS00N2M2LWFhOTgtMzU4MWI2MDkzNzc1IiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9&pageName=ReportSection"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>5Ws Response Dashboard 2023</h3>
+              <p>Tracks GBV AoR partner activities and HRP-related indicators.</p>
+              <div class="project-card-tags">
+                <span>Power BI</span>
+                <span>5Ws</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Nigeria Joint Market Monitoring Initiative Dashboard"
+            data-summary="Real-time market prices, availability, and trends of essential commodities across conflict-affected areas in Nigeria."
+            data-live="https://app.powerbi.com/view?r=eyJrIjoiODc2ZTc5NTktYzJhNC00NGIyLTgwYjUtZmUyZjU2MWE1ZGQ2IiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>Nigeria JMMI Dashboard</h3>
+              <p>Market price, commodity availability, and trend monitoring for humanitarian decision-making.</p>
+              <div class="project-card-tags">
+                <span>Power BI</span>
+                <span>Market Monitoring</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Child Protection Response Monitoring Dashboard"
+            data-summary="Monitors partner response figures, LGA coverage, beneficiaries reached, and service trends."
+            data-live="https://app.powerbi.com/view?r=eyJrIjoiYjk5YTIxZTItZGIyZS00NmM2LTgxNDItZGQ4MTFiY2Y3NTkwIiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9&pageName=ReportSection5aef375c1153ec70bac1"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>Child Protection Response Monitoring Dashboard</h3>
+              <p>Monitors response figures, coverage, beneficiaries, and monthly service trends.</p>
+              <div class="project-card-tags">
+                <span>Power BI</span>
+                <span>Child Protection</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Humanitarian Project Information Dashboard for BSA"
+            data-summary="Tracks humanitarian and development projects, thematic areas, and implementation gaps across Borno State."
+            data-live="https://app.powerbi.com/view?r=eyJrIjoiNDIzMDk0YTgtMzc4YS00MDIyLTg4M2YtZTM3ZmQ4ZTAwNWVjIiwidCI6ImY2ZjcwZjFiLTJhMmQtNGYzMC04NTJhLTY0YjhjZTBjMTlkNyIsImMiOjF9&pageName=ReportSection"
+          >
+            <div class="project-card-media project-card-media-live"><span>LIVE</span></div>
+            <div class="project-card-body">
+              <h3>Humanitarian Project Information Dashboard for BSA</h3>
+              <p>Tracks project coverage, thematic areas, and location gaps.</p>
+              <div class="project-card-tags">
+                <span>Power BI</span>
+                <span>Project Tracking</span>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category projects-v2-alt" id="reports">
+    <section class="projects-category projects-category-alt" id="reports">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Reports</p>
-          <h2 class="projects-v2-section-title">Technical reports, analytical writeups, and decision-support documents.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Reports</p>
+          <h2 class="projects-section-title">Technical reports, guidance notes, SOPs, and analytical documents.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Report Example 1</h3>
-              <p>Add your PDF or report cover image here with a concise summary of the report purpose.</p>
-              <div class="projects-v2-tags">
-                <span>PDF</span>
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="GBV Annual Report 2023 Northeast Nigeria"
+            data-summary="Annual reporting product summarizing GBV AoR response and coordination in Northeast Nigeria."
+            data-live="https://drive.google.com/file/d/11r8oDc19VH0ALLbt6rWHEoPWU-QETQ4B/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-doc"><span>PDF</span></div>
+            <div class="project-card-body">
+              <h3>GBV Annual Report 2023 Northeast Nigeria</h3>
+              <p>Annual reporting product summarizing GBV AoR response and coordination in Northeast Nigeria.</p>
+              <div class="project-card-tags">
                 <span>Report</span>
+                <span>GBV</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Report Example 2</h3>
-              <p>Use this for annual reports, analytical briefs, or technical reporting outputs.</p>
-              <div class="projects-v2-tags">
-                <span>Analysis</span>
-                <span>Reporting</span>
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="GBV AoR Coordination Workshop Report 2024"
+            data-summary="Workshop reporting product documenting coordination discussions and outputs."
+            data-live="https://drive.google.com/file/d/1vgD7LiAlfdwWAAE8Vx2Xe0yNTmEouWDc/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-doc"><span>PDF</span></div>
+            <div class="project-card-body">
+              <h3>GBV AoR Coordination Workshop Report 2024</h3>
+              <p>Workshop reporting product documenting coordination discussions and outputs.</p>
+              <div class="project-card-tags">
+                <span>Report</span>
+                <span>Workshop</span>
               </div>
             </div>
-          </article>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="SOPs for GBV Interventions in Humanitarian Settings Northeast Nigeria"
+            data-summary="Resource package aimed at standardizing GBV interventions in humanitarian settings."
+            data-live="https://docs.google.com/document/d/1znGcqnmSJaakEhD9rKQ_qx5dsUPYnvlE/edit?usp=sharing&ouid=106041965118507875899&rtpof=true&sd=true"
+          >
+            <div class="project-card-media project-card-media-doc"><span>DOC</span></div>
+            <div class="project-card-body">
+              <h3>SOPs for GBV Interventions in Humanitarian Settings</h3>
+              <p>Resource package aimed at standardizing GBV interventions in humanitarian settings.</p>
+              <div class="project-card-tags">
+                <span>SOP</span>
+                <span>Guidance</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Mid-Year Report GBV AoR Northeast Nigeria 2023"
+            data-summary="Mid-year analytical reporting output for GBV AoR activities and coordination."
+            data-live="https://drive.google.com/file/d/1Fg7tb6BPGCfJ-DUsvrTRuHubWHHs2_C2/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-doc"><span>PDF</span></div>
+            <div class="project-card-body">
+              <h3>Mid-Year Report GBV AoR Northeast Nigeria 2023</h3>
+              <p>Mid-year analytical reporting output for GBV AoR activities and coordination.</p>
+              <div class="project-card-tags">
+                <span>Report</span>
+                <span>Mid-Year</span>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category" id="presentations">
+    <section class="projects-category" id="presentations">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Presentations</p>
-          <h2 class="projects-v2-section-title">Slide decks, briefing presentations, and technical presentations.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Presentations</p>
+          <h2 class="projects-section-title">Slide decks, workshop materials, and technical presentations.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Presentation Example 1</h3>
-              <p>Add a preview image and short description for a presentation or slide deck.</p>
-              <div class="projects-v2-tags">
-                <span>Slides</span>
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Annual Cash Working Group Workshop"
+            data-summary="Workshop presentation and support material."
+            data-live="https://drive.google.com/file/d/1MdjPiTAfLjN58TrN2znWQ4UqQ1owPr2Z/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-slides"><span>SLIDES</span></div>
+            <div class="project-card-body">
+              <h3>Annual Cash Working Group Workshop</h3>
+              <p>Workshop presentation and support material.</p>
+              <div class="project-card-tags">
                 <span>Presentation</span>
+                <span>Workshop</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Presentation Example 2</h3>
-              <p>Use this for conference decks, technical briefs, or strategic review presentations.</p>
-              <div class="projects-v2-tags">
-                <span>Briefing</span>
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="iMMAP Nigeria HIAU Presentation"
+            data-summary="Presentation focused on iMMAP Nigeria HIAU work and analytical support."
+            data-live="https://docs.google.com/presentation/d/1S_Vp3-asUEs4FsUaixRrTIM_dls7vJdm/edit?usp=sharing&ouid=110888536684468687860&rtpof=true&sd=true"
+          >
+            <div class="project-card-media project-card-media-slides"><span>SLIDES</span></div>
+            <div class="project-card-body">
+              <h3>iMMAP Nigeria HIAU Presentation</h3>
+              <p>Presentation focused on iMMAP Nigeria HIAU work and analytical support.</p>
+              <div class="project-card-tags">
                 <span>Slides</span>
+                <span>HIAU</span>
               </div>
             </div>
-          </article>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="GBV AoR Northeast Nigeria: Responding to Violence through Information Management"
+            data-summary="Presentation showing how information management supports GBV response."
+            data-live="https://docs.google.com/presentation/d/1q8ad-Ugg8HXbQi-aioTNnbQEyxQHXw7-/edit?usp=drive_link&ouid=110888536684468687860&rtpof=true&sd=true"
+          >
+            <div class="project-card-media project-card-media-slides"><span>SLIDES</span></div>
+            <div class="project-card-body">
+              <h3>Responding to Violence through Information Management</h3>
+              <p>Presentation showing how information management supports GBV response.</p>
+              <div class="project-card-tags">
+                <span>Slides</span>
+                <span>GBV</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="GIS Mapping Using ArcGIS Pro"
+            data-summary="Presentation on GIS mapping workflows using ArcGIS Pro."
+            data-live="https://docs.google.com/presentation/d/1s3po69guW_TutdrRrbIp1DBfFA9yOC1G/edit?usp=drive_link&ouid=110888536684468687860&rtpof=true&sd=true"
+          >
+            <div class="project-card-media project-card-media-slides"><span>SLIDES</span></div>
+            <div class="project-card-body">
+              <h3>GIS Mapping Using ArcGIS Pro</h3>
+              <p>Presentation on GIS mapping workflows using ArcGIS Pro.</p>
+              <div class="project-card-tags">
+                <span>GIS</span>
+                <span>Training</span>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category projects-v2-alt" id="infographics">
+    <section class="projects-category projects-category-alt" id="infographics">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Infographics</p>
-          <h2 class="projects-v2-section-title">Visual information products for communication and interpretation.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Infographics</p>
+          <h2 class="projects-section-title">Visual information products for communication and interpretation.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Infographic Example 1</h3>
-              <p>Add infographic preview, purpose, and target audience.</p>
-              <div class="projects-v2-tags">
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Infographic Example"
+            data-summary="Visual information product developed for communication and quick interpretation."
+            data-live="https://drive.google.com/file/d/1mK6WEkpzAowcF6AxYPq6uOQltIcZjnS4/view?usp=sharing"
+          >
+            <div class="project-card-media project-card-media-info"><span>INFO</span></div>
+            <div class="project-card-body">
+              <h3>Infographic Product</h3>
+              <p>Visual information product developed for communication and quick interpretation.</p>
+              <div class="project-card-tags">
                 <span>Infographic</span>
                 <span>Communication</span>
               </div>
             </div>
-          </article>
-
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Infographic Example 2</h3>
-              <p>Use this for visual summaries, analytical snapshots, or public-facing information products.</p>
-              <div class="projects-v2-tags">
-                <span>Visual Summary</span>
-                <span>Insight</span>
-              </div>
-            </div>
-          </article>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category" id="videos">
+    <section class="projects-category" id="videos">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Videos</p>
-          <h2 class="projects-v2-section-title">Video explainers, screen walkthroughs, and visual communication products.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Videos</p>
+          <h2 class="projects-section-title">Video explainers, screen walkthroughs, and media products.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Video Example 1</h3>
-              <p>Add a thumbnail image and link to YouTube, Vimeo, or hosted video content.</p>
-              <div class="projects-v2-tags">
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Video Product 01"
+            data-summary="Video product available through Google Drive."
+            data-live="https://drive.google.com/file/d/1uTzC6HazdHGwKTcIZP30eiD42JxnwdHe/view?usp=drive_link"
+          >
+            <div class="project-card-media project-card-media-video"><span>VIDEO</span></div>
+            <div class="project-card-body">
+              <h3>Video Product 01</h3>
+              <p>Video product available through Google Drive.</p>
+              <div class="project-card-tags">
                 <span>Video</span>
-                <span>Explainer</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Video Example 2</h3>
-              <p>Use this for short demos, public products, or technical walkthroughs.</p>
-              <div class="projects-v2-tags">
                 <span>Media</span>
-                <span>Presentation</span>
               </div>
             </div>
-          </article>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Video Product 02"
+            data-summary="Video product available through Google Drive."
+            data-live="https://drive.google.com/file/d/1abs1Zn0T0u3ko3BSJ0qJODhqwYhcE_3i/view?usp=drive_link"
+          >
+            <div class="project-card-media project-card-media-video"><span>VIDEO</span></div>
+            <div class="project-card-body">
+              <h3>Video Product 02</h3>
+              <p>Video product available through Google Drive.</p>
+              <div class="project-card-tags">
+                <span>Video</span>
+                <span>Communication</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Video Product 03"
+            data-summary="Video product available through Google Drive."
+            data-live="https://drive.google.com/file/d/1-ZteFZ7iKRNrQNdZXd117fMMrrcyZvr1/view?usp=drive_link"
+          >
+            <div class="project-card-media project-card-media-video"><span>VIDEO</span></div>
+            <div class="project-card-body">
+              <h3>Video Product 03</h3>
+              <p>Video product available through Google Drive.</p>
+              <div class="project-card-tags">
+                <span>Video</span>
+                <span>Outreach</span>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category projects-v2-alt" id="forms">
+    <section class="projects-category projects-category-alt" id="forms">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Forms</p>
-          <h2 class="projects-v2-section-title">Data collection tools, forms, and structured input systems.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Forms</p>
+          <h2 class="projects-section-title">Data collection tools and structured form systems.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Form Example 1</h3>
-              <p>Add KoboToolbox, XLSForm, SurveyCTO, or other form design work here.</p>
-              <div class="projects-v2-tags">
-                <span>KoboToolbox</span>
-                <span>Form Design</span>
+        <div class="projects-grid">
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Adamawa Quarterly Reporting Form (Q4 2023)"
+            data-summary="Structured Kobo form for quarterly reporting."
+            data-live="https://ee-eu.kobotoolbox.org/x/mpqkkXra"
+          >
+            <div class="project-card-media project-card-media-form"><span>FORM</span></div>
+            <div class="project-card-body">
+              <h3>Adamawa Quarterly Reporting Form</h3>
+              <p>Structured Kobo form for quarterly reporting.</p>
+              <div class="project-card-tags">
+                <span>Kobo</span>
+                <span>Reporting</span>
               </div>
             </div>
-          </article>
+          </button>
 
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Form Example 2</h3>
-              <p>Use this for structured tools, validation logic, skip patterns, and deployment-ready forms.</p>
-              <div class="projects-v2-tags">
-                <span>XLSForm</span>
-                <span>Data Collection</span>
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="GBViE Capacity Mapping and Development 2023-2025"
+            data-summary="Kobo-based form supporting capacity mapping and development tracking."
+            data-live="https://ee-eu.kobotoolbox.org/x/Wi6dzXcx"
+          >
+            <div class="project-card-media project-card-media-form"><span>FORM</span></div>
+            <div class="project-card-body">
+              <h3>GBViE Capacity Mapping and Development</h3>
+              <p>Kobo-based form supporting capacity mapping and development tracking.</p>
+              <div class="project-card-tags">
+                <span>Kobo</span>
+                <span>Capacity Mapping</span>
               </div>
             </div>
-          </article>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Humanitarian Cargo Movement Notification Platform"
+            data-summary="Form supporting structured cargo movement notification data collection."
+            data-live="https://ee-eu.kobotoolbox.org/x/meiIG6Ge"
+          >
+            <div class="project-card-media project-card-media-form"><span>FORM</span></div>
+            <div class="project-card-body">
+              <h3>Humanitarian Cargo Movement Notification Platform</h3>
+              <p>Form supporting structured cargo movement notification data collection.</p>
+              <div class="project-card-tags">
+                <span>Kobo</span>
+                <span>Logistics</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="Joint Market Monitoring Initiative Tool"
+            data-summary="Kobo form supporting market monitoring data collection."
+            data-live="https://ee-eu.kobotoolbox.org/x/oE3I3Ucp"
+          >
+            <div class="project-card-media project-card-media-form"><span>FORM</span></div>
+            <div class="project-card-body">
+              <h3>Joint Market Monitoring Initiative Tool</h3>
+              <p>Kobo form supporting market monitoring data collection.</p>
+              <div class="project-card-tags">
+                <span>Kobo</span>
+                <span>Market Monitoring</span>
+              </div>
+            </div>
+          </button>
+
+          <button
+            class="project-card project-launch-card project-card-noimage"
+            type="button"
+            data-title="MEAL Framework BONWOC - Borno, Nigeria"
+            data-summary="Structured form supporting monitoring, evaluation, accountability, and learning."
+            data-live="https://ee-eu.kobotoolbox.org/x/PITefD42"
+          >
+            <div class="project-card-media project-card-media-form"><span>FORM</span></div>
+            <div class="project-card-body">
+              <h3>MEAL Framework BONWOC</h3>
+              <p>Structured form supporting monitoring, evaluation, accountability, and learning.</p>
+              <div class="project-card-tags">
+                <span>Kobo</span>
+                <span>MEAL</span>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="projects-v2-category" id="python">
+    <section class="projects-category" id="python">
       <div class="container">
-        <div class="projects-v2-header">
-          <p class="projects-v2-section-kicker">Python</p>
-          <h2 class="projects-v2-section-title">Python-based automation, analysis, and workflow development.</h2>
+        <div class="projects-section-head">
+          <p class="projects-section-kicker">Python</p>
+          <h2 class="projects-section-title">Python-based automation, analysis, and workflow development.</h2>
         </div>
 
-        <div class="projects-v2-grid">
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Python Workflow Example 1</h3>
-              <p>Add a short description of a Python-based ETL, dashboard, automation, or analytical workflow.</p>
-              <div class="projects-v2-tags">
+        <div class="projects-grid">
+          <article class="project-card project-card-infoonly">
+            <div class="project-card-media project-card-media-python"><span>PY</span></div>
+            <div class="project-card-body">
+              <h3>Reporting Automation Workflows</h3>
+              <p>Python-based automation for cleaning, transforming, validating, and structuring reporting data for analysis and dashboard use.</p>
+              <div class="project-card-tags">
                 <span>Python</span>
                 <span>Automation</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects-v2-card placeholder-card">
-            <div class="projects-v2-body">
-              <h3>Python Workflow Example 2</h3>
-              <p>Use this for scripts, data pipelines, reporting automation, or geospatial processing workflows.</p>
-              <div class="projects-v2-tags">
-                <span>GeoPandas</span>
                 <span>ETL</span>
               </div>
             </div>
           </article>
+
+          <article class="project-card project-card-infoonly">
+            <div class="project-card-media project-card-media-python"><span>PY</span></div>
+            <div class="project-card-body">
+              <h3>Geospatial and Analytical Processing</h3>
+              <p>Python workflows supporting data pipelines, geospatial transformation, and structured analytical processing using tools such as Pandas and GeoPandas.</p>
+              <div class="project-card-tags">
+                <span>GeoPandas</span>
+                <span>Pandas</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -369,5 +742,6 @@
     </div>
   </footer>
 
+  <script src="js/projects.js"></script>
 </body>
 </html>
