@@ -2001,7 +2001,7 @@ video {
 
 .about-v2-profile-image {
   width: 100%;
-  background-color: #f3f4f6;
+  background-color: rgba(243, 244, 246, 0.7);
 }
 
 .about-v2-profile-image img {
