@@ -4581,7 +4581,7 @@ button.home-project-card-final {
   color: #ffffff !important;
 }
 
-/* remove the outer white card chrome, keep Core Focus Areas body as is */
+/* ABOUT profile card, keep white behind image only */
 .about-v2-profile-card {
   background: transparent !important;
   border: none !important;
@@ -4589,12 +4589,23 @@ button.home-project-card-final {
 }
 
 .about-v2-profile-image {
-  background: transparent !important;
+  background-color: #ffffff !important;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
 }
 
 .about-v2-profile-body {
-  background-color: #ffffff !important;
-  border-radius: 0 0 20px 20px;
+  background: transparent !important;
+  padding: 26px 26px 30px;
+  text-align: center;
+}
+
+.about-v2-profile-body h2 {
+  color: #c2410c !important;
+}
+
+.about-v2-focus-list li {
+  color: #ffffff !important;
 }
 
 /* PROJECTS HERO */
