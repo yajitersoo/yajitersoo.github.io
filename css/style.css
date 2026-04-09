@@ -4076,7 +4076,7 @@ button.home-project-card-final {
 
 .projects-chip-final:hover {
   background: rgba(255, 255, 255, 0.14);
-  /* border-color: rgba(255, 255, 255, 0.24); */
+  border-color: rgba(255, 255, 255, 0.24);
 }
 
 
