@@ -4237,3 +4237,49 @@ button.home-project-card-final {
     font-size: 1.55rem;
   }
 }
+
+
+.about-v2-hero {
+  padding: 88px 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #e5e7eb;
+}
+
+.about-v2-kicker,
+.about-v2-section-kicker {
+  color: #93c5fd;
+}
+
+.about-v2-title {
+  color: #ffffff;
+}
+
+.about-v2-text p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.projects-hero-final {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects-kicker-final {
+  color: #93c5fd;
+}
+
+.projects-title-final {
+  color: #ffffff;
+}
+
+.projects-intro-final {
+  color: rgba(255, 255, 255, 0.88);
+}
