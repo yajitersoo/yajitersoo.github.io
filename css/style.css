@@ -4283,3 +4283,81 @@ button.home-project-card-final {
 .projects-intro-final {
   color: rgba(255, 255, 255, 0.88);
 }
+
+.projects-hero-final {
+  padding: 110px 0 80px;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.projects-hero-grid-final {
+  display: block;
+  min-height: auto;
+  padding: 0;
+}
+
+.projects-hero-text-final {
+  max-width: 980px;
+}
+
+.projects-hero-card-final {
+  display: none;
+}
+
+.projects-kicker-final {
+  margin: 0 0 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.projects-title-final {
+  max-width: 980px;
+  margin: 0 0 18px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.projects-intro-final {
+  max-width: 760px;
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.projects-chip-row-final {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.projects-chip-final {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.projects-chip-final:hover {
+  background: #f8fafc;
+  border-color: #dbe1e8;
+}
