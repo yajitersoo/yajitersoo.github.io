@@ -1992,9 +1992,9 @@ video {
 }
 
 .about-v2-profile-card {
-  background-color: #ffffff;
+  background-color: rgba(243, 244, 246, 0.4);
   border: 1px solid #e5e7eb;
-  border-radius: 20px;
+  border-radius: 2px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
