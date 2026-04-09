@@ -4583,7 +4583,7 @@ button.home-project-card-final {
 
 /* ABOUT profile card, keep white behind image only */
 .about-v2-profile-card {
-  background: transparent !important;
+  background-color: rgba(243, 244, 246, 0.4);
   border: none !important;
   box-shadow: none !important;
 }
