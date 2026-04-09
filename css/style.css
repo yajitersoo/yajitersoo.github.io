@@ -4508,3 +4508,221 @@ button.home-project-card-final {
     line-height: 1.75;
   }
 }
+
+
+/* New commit again---- */
+
+
+/* =========================
+   FINAL HERO + CONSISTENCY OVERRIDES
+   Paste at the very end of style.css
+========================= */
+
+/* active nav */
+.nav-link[aria-current="page"] {
+  color: #c2410c;
+  font-weight: 700;
+}
+
+.nav-link[aria-current="page"]:hover {
+  opacity: 1;
+}
+
+/* remove white divider line between header and main on About and Projects */
+.about-v2-hero,
+.projects-hero-final {
+  border-top: none !important;
+}
+
+/* make hero title scale more consistent across pages */
+.hero-title,
+.about-v2-title,
+.projects-title-final,
+.contact-final-title {
+  font-size: clamp(2rem, 4.1vw, 3.3rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em;
+}
+
+/* hero supporting text consistency */
+.hero-description,
+.projects-intro-final,
+.about-v2-text p,
+.contact-final-text {
+  font-size: 0.98rem !important;
+  line-height: 1.8 !important;
+}
+
+/* keep hero vertical rhythm aligned */
+.hero-section,
+.about-v2-hero,
+.projects-hero-final,
+.contact-final-section {
+  padding: 88px 0 !important;
+}
+
+/* ABOUT HERO */
+.about-v2-hero {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-v2-kicker,
+.about-v2-section-kicker {
+  color: #93c5fd !important;
+}
+
+.about-v2-title,
+.about-v2-text p {
+  color: #ffffff !important;
+}
+
+/* remove the outer white card chrome, keep Core Focus Areas body as is */
+.about-v2-profile-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.about-v2-profile-image {
+  background: transparent !important;
+}
+
+.about-v2-profile-body {
+  background-color: #ffffff !important;
+  border-radius: 0 0 20px 20px;
+}
+
+/* PROJECTS HERO */
+.projects-hero-final {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.72)),
+    url("../assets/images/1748969851904.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* keep the simpler intro layout */
+.projects-hero-grid-final {
+  display: block !important;
+  min-height: auto !important;
+  padding: 0 !important;
+}
+
+.projects-hero-text-final {
+  max-width: 980px;
+}
+
+.projects-hero-card-final {
+  display: none !important;
+}
+
+.projects-kicker-final {
+  color: #93c5fd !important;
+  margin: 0 0 14px !important;
+}
+
+.projects-title-final {
+  max-width: 980px;
+  color: #ffffff !important;
+  margin: 0 0 18px !important;
+}
+
+.projects-intro-final {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.88) !important;
+  margin: 0 0 28px !important;
+}
+
+/* browse by category chips */
+.projects-chip-row-final {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.projects-chip-final {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fdba74 !important;
+  background: transparent !important;
+  border: 1px solid rgba(251, 146, 60, 0.35) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.projects-chip-final:hover {
+  background: rgba(194, 65, 12, 0.14) !important;
+  color: #fff7ed !important;
+  border-color: rgba(251, 146, 60, 0.8) !important;
+  transform: translateY(-1px);
+}
+
+/* CONTACT HERO TITLE consistency */
+.contact-final-title {
+  max-width: 760px;
+  color: #ffffff;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  .hero-section,
+  .about-v2-hero,
+  .projects-hero-final,
+  .contact-final-section {
+    padding: 72px 0 !important;
+  }
+
+  .about-v2-title,
+  .projects-title-final,
+  .contact-final-title {
+    font-size: clamp(1.9rem, 5vw, 2.7rem) !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+  .hero-section,
+  .about-v2-hero,
+  .projects-hero-final,
+  .contact-final-section {
+    padding: 52px 0 !important;
+  }
+
+  .hero-title,
+  .about-v2-title,
+  .projects-title-final,
+  .contact-final-title {
+    font-size: 1.7rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-description,
+  .projects-intro-final,
+  .about-v2-text p,
+  .contact-final-text {
+    font-size: 0.95rem !important;
+    line-height: 1.75 !important;
+  }
+
+  .projects-chip-final {
+    font-size: 0.84rem;
+    min-height: 40px;
+    padding: 0 14px;
+  }
+}
