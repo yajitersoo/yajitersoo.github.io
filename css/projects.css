@@ -96,7 +96,7 @@
 .projects-chip-final {
   display: inline-block;
   padding: 9px 13px;
-  border-radius: 999px;
+  border-radius: 2px;
   /* background-color: #ffffff; */
   border: 0.1px solid #dbe1e8;
   font-size: 0.82rem;
