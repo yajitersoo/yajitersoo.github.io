@@ -1409,3 +1409,21 @@ button.home-project-card-final {
   color: var(--color-warm) !important;
   opacity: 1 !important;
 }
+
+
+
+.section-kicker,
+.profile-label,
+.projects-section-kicker-final,
+.contact-final-kicker,
+.contact-section-kicker-final,
+.about-v2-kicker,
+.about-v2-section-kicker,
+.about-v3-section-kicker {
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #878787;
+  margin-bottom: 12px;
+}
