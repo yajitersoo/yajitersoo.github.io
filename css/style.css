@@ -152,7 +152,7 @@ select {
 }
 
 .btn-primary {
-  background-color: var(--color-warm);
+  background-color: #878787;
   color: #ffffff !important;
 }
 
