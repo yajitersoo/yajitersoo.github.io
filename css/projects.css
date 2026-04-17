@@ -108,7 +108,8 @@
 }
 
 .projects-chip-final:hover {
-  background-color: #eff6ff;
+  /* background-color: #eff6ff; */
+  color: #334155;
 }
 
 .projects-head-final {
