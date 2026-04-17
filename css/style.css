@@ -152,8 +152,8 @@ select {
 }
 
 .btn-primary {
-  background-color: var(--color-text);
-  color: var(--color-warm) !important;
+  background-color: var(--color-warm);
+  color: #ffffff !important;
 }
 
 .btn-primary:hover {
