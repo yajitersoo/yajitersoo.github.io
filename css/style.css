@@ -477,7 +477,7 @@ select {
   font-size: clamp(1.55rem, 3vw, 2.05rem);
   line-height: 1.18;
   font-weight: 700;
-  color: var(--color-text);
+  color: #878787;
   letter-spacing: -0.02em;
 }
 
