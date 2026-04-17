@@ -469,7 +469,7 @@ select {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-accent);
+  color: #878787;
   margin-bottom: 12px;
 }
 
