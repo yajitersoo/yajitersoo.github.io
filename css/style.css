@@ -1381,3 +1381,31 @@ button.home-project-card-final {
     font-size: 1.1rem;
   }
 }
+
+
+:root {
+  --color-warm: #c2410c;
+}
+
+.site-header .nav-link {
+  color: #ffffff;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: #ffffff;
+  opacity: 0.82;
+}
+
+.site-header .nav-link[aria-current="page"] {
+  color: var(--color-warm) !important;
+  opacity: 1 !important;
+  font-weight: 600;
+}
+
+.site-header .nav-link[aria-current="page"]:hover,
+.site-header .nav-link[aria-current="page"]:focus {
+  color: var(--color-warm) !important;
+  opacity: 1 !important;
+}
