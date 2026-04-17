@@ -98,18 +98,18 @@
   padding: 9px 13px;
   border-radius: 999px;
   /* background-color: #ffffff; */
-  /* border: 1px solid #dbe1e8; */
+  border: 0.1px solid #dbe1e8;
   font-size: 0.82rem;
   font-weight: 600;
-  /* color: #334155; */
-  color: var(--color-warm);
+  color: #334155;
+  /* color: var(--color-warm); */
   text-decoration: none;
   transition: background-color 0.24s ease, transform 0.24s ease;
 }
 
 .projects-chip-final:hover {
-  /* background-color: #eff6ff; */
-  color: #334155;
+  background-color: #eff6ff;
+  /* color: #334155; */
 }
 
 .projects-head-final {
