@@ -37,3 +37,7 @@ The service-role key is optional for local administrative scripts and must never
 ## GitHub Pages
 
 The Pages workflow is intentionally manual. This prevents the new portfolio from replacing the existing live site before review and approval. After the final content review, configure GitHub Pages to use GitHub Actions and run the deployment workflow.
+
+## Owner documentation
+
+See the [Portfolio Owner's Guide](docs/PORTFOLIO-OWNER-GUIDE.md) for step-by-step instructions on updating profile content and projects, changing colours and source-controlled content, publishing through GitHub Pages, managing Supabase, and troubleshooting common issues.
