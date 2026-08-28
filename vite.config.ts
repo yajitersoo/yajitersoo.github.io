@@ -43,7 +43,20 @@ export default defineConfig(async () => {
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
+  // Vinext does not automatically expose Next.js-style public variables in
+  // every build environment. Define these two browser-safe values explicitly
+  // so GitHub Actions and Sites produce the same client bundle.
+  const publicSupabaseEnv = {
+    "process.env.NEXT_PUBLIC_SUPABASE_URL": JSON.stringify(
+      process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
+    ),
+    "process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": JSON.stringify(
+      process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? "",
+    ),
+  };
+
   return {
+    define: publicSupabaseEnv,
     server: {
       host: "0.0.0.0",
       allowedHosts: ["terminal.local"],
