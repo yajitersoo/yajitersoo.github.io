@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, GraduationCap, Layers3, Workflow } from "lucide-react";
 import { AboutProfileCopy } from "@/components/dynamic-profile-content";
@@ -23,6 +24,19 @@ export default function AboutPage() {
               <p className="eyebrow">Professional profile</p>
               <h1>Building the systems behind trustworthy evidence.</h1>
             </div>
+            <figure className="about-portrait">
+              <Image
+                src="/tersoo-yaji-portrait.jpeg"
+                alt="Portrait of Tersoo Yaji"
+                width={2048}
+                height={2048}
+                fetchPriority="high"
+              />
+              <figcaption>
+                <strong>Tersoo Yaji</strong>
+                <span>Information Management Specialist, UNMAS</span>
+              </figcaption>
+            </figure>
             <AboutProfileCopy />
           </div>
         </section>

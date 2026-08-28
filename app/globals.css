@@ -1583,8 +1583,9 @@ textarea:focus-visible,
 
 .about-hero__grid {
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 100px;
+  grid-template-columns: 1.12fr 0.72fr 0.9fr;
+  gap: 52px;
+  align-items: end;
 }
 
 .about-hero h1 {
@@ -1604,6 +1605,40 @@ textarea:focus-visible,
   color: #4c6076;
   font-size: 1rem;
   line-height: 1.82;
+}
+
+.about-portrait {
+  margin: 0;
+  border: 1px solid #cbd8e5;
+  background: #fff;
+  box-shadow: 18px 18px 0 rgba(8, 36, 65, 0.08);
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+
+.about-portrait figcaption {
+  display: grid;
+  gap: 5px;
+  border-top: 3px solid var(--orange);
+  padding: 18px 20px 20px;
+}
+
+.about-portrait figcaption strong {
+  color: var(--navy);
+  font-family: Georgia, Cambria, serif;
+  font-size: 1.15rem;
+}
+
+.about-portrait figcaption span {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .about-principles {
@@ -2951,6 +2986,10 @@ textarea:focus-visible,
     border-left: 0;
     padding-top: 25px;
     padding-left: 0;
+  }
+
+  .about-portrait {
+    width: min(100%, 520px);
   }
 
   .experience-list article {
