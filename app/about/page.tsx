@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, GraduationCap, Layers3, Workflow } from "lucide-react";
 import { AboutProfileCopy } from "@/components/dynamic-profile-content";
@@ -25,7 +24,9 @@ export default function AboutPage() {
               <h1>Building the systems behind trustworthy evidence.</h1>
             </div>
             <figure className="about-portrait">
-              <Image
+              {/* A native image keeps the asset path intact in the GitHub Pages static build. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/tersoo-yaji-portrait.jpeg"
                 alt="Portrait of Tersoo Yaji"
                 width={2048}
