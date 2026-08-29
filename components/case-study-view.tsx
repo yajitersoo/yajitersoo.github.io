@@ -19,6 +19,7 @@ import { ProjectVisual } from "@/components/project-visual";
 import { projectBySlug, publishedProjects, withCaseStudy } from "@/lib/projects";
 import type { Project } from "@/lib/portfolio-types";
 import { fetchPublishedProjects } from "@/lib/supabase/projects";
+import { getProductHref, opensInNewTab } from "@/lib/product-links";
 
 export function CaseStudyView() {
   const searchParams = useSearchParams();
@@ -75,7 +76,12 @@ export function CaseStudyView() {
           <p>{project.summary}</p>
           <div className="case-study__actions">
             {project.mediaUrl ? (
-              <a href={project.mediaUrl} target="_blank" rel="noreferrer" className="button-link button-link--primary">
+              <a
+                href={getProductHref(project.mediaUrl, project.title)}
+                target={opensInNewTab(project.mediaUrl) ? "_blank" : undefined}
+                rel={opensInNewTab(project.mediaUrl) ? "noreferrer" : undefined}
+                className="button-link button-link--primary"
+              >
                 View product <ExternalLink aria-hidden="true" />
               </a>
             ) : null}
@@ -173,4 +179,3 @@ export function CaseStudyView() {
     </article>
   );
 }
-

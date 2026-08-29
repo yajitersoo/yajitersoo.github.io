@@ -2,9 +2,10 @@ import Link from "next/link";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { ProjectVisual } from "@/components/project-visual";
 import type { Project } from "@/lib/portfolio-types";
+import { getProductHref, isExternalUrl, opensInNewTab } from "@/lib/product-links";
 
 export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
-  const hasLiveUrl = Boolean(project.mediaUrl?.match(/^https?:\/\//i));
+  const hasLiveUrl = isExternalUrl(project.mediaUrl) && opensInNewTab(project.mediaUrl);
   const productLabel = project.category === "interactive-dashboards" && hasLiveUrl
     ? "Open live dashboard"
     : hasLiveUrl
@@ -34,9 +35,9 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
           <div className="project-card__actions">
             {project.mediaUrl ? (
               <a
-                href={project.mediaUrl}
-                target={hasLiveUrl ? "_blank" : undefined}
-                rel={hasLiveUrl ? "noreferrer" : undefined}
+                href={getProductHref(project.mediaUrl, project.title)}
+                target={opensInNewTab(project.mediaUrl) ? "_blank" : undefined}
+                rel={opensInNewTab(project.mediaUrl) ? "noreferrer" : undefined}
                 className="project-card__product-link"
               >
                 {productLabel} <ExternalLink aria-hidden="true" />
