@@ -874,7 +874,7 @@ textarea:focus-visible,
 
 .tag-list span {
   border: 1px solid #cbd9e8;
-  border-radius: 99px;
+  border-radius: 12px;
   background: #f7faff;
   padding: 5px 9px;
   color: #2a5e9b;
