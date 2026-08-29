@@ -46,7 +46,7 @@ export const profile = {
   experience: [
     {
       period: "2025 to present",
-      role: "Information Management Specialist",
+      role: "Information Management and Analytics Senior Associate",
       organisation: "UNMAS",
       summary:
         "Leads programme performance, results harmonisation, evidence-to-action processes, learning systems and decision-oriented monitoring across the Nigeria portfolio.",
