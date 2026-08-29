@@ -1,9 +1,16 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { ProjectVisual } from "@/components/project-visual";
 import type { Project } from "@/lib/portfolio-types";
 
 export function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
+  const hasLiveUrl = Boolean(project.mediaUrl?.match(/^https?:\/\//i));
+  const productLabel = project.category === "interactive-dashboards" && hasLiveUrl
+    ? "Open live dashboard"
+    : hasLiveUrl
+      ? "Open live product"
+      : "View product";
+
   return (
     <article className="project-card">
       <Link href={`/case-study/?project=${project.slug}`} className="project-card__visual-link" aria-label={`View ${project.title}`}>
@@ -24,12 +31,23 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
               <span key={tag}>{tag}</span>
             ))}
           </div>
-          <Link href={`/case-study/?project=${project.slug}`} className="project-card__arrow" aria-label={`Open ${project.title}`}>
-            <ArrowUpRight aria-hidden="true" />
-          </Link>
+          <div className="project-card__actions">
+            {project.mediaUrl ? (
+              <a
+                href={project.mediaUrl}
+                target={hasLiveUrl ? "_blank" : undefined}
+                rel={hasLiveUrl ? "noreferrer" : undefined}
+                className="project-card__product-link"
+              >
+                {productLabel} <ExternalLink aria-hidden="true" />
+              </a>
+            ) : null}
+            <Link href={`/case-study/?project=${project.slug}`} className="project-card__arrow" aria-label={`Open case study for ${project.title}`}>
+              <ArrowUpRight aria-hidden="true" />
+            </Link>
+          </div>
         </div>
       </div>
     </article>
   );
 }
-
