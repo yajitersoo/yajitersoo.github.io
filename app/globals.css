@@ -897,6 +897,36 @@ textarea:focus-visible,
   color: var(--orange);
 }
 
+.project-card__actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-card__product-link {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--orange);
+  padding: 7px 10px;
+  color: var(--orange-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.project-card__product-link:hover {
+  background: var(--orange);
+  color: white;
+}
+
+.project-card__product-link svg {
+  width: 14px;
+  height: 14px;
+}
+
 .project-card__arrow svg {
   width: 17px;
   height: 17px;

@@ -32,9 +32,9 @@ export const profile = {
         "Reporting architecture, partner workflows, data standards, governance and quality assurance.",
     },
     {
-      title: "Data Analytics",
+      title: "Data Analytics & Data Science",
       description:
-        "Decision-focused analysis, dashboards, automation, statistical workflows and reporting products.",
+        "Statistical analysis, machine learning, predictive modelling, automation, dashboards and decision-focused analytical products.",
     },
     {
       title: "GIS & Spatial Analysis",
