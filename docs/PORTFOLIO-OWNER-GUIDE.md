@@ -59,7 +59,7 @@ Use GitHub for design and source-controlled content changes.
 
 | Change | Main file |
 | --- | --- |
-| Homepage content and fixed featured projects | `app/page.tsx` and `lib/projects.ts` |
+| Homepage content, featured visual, and fixed featured projects | `app/page.tsx`, `public/homepage-featured-product.webp`, and `lib/projects.ts` |
 | About page structure and portrait | `app/about/page.tsx` and `public/tersoo-yaji-portrait.jpeg` |
 | Experience, education, capabilities, tools, and statistics | `data/profile.ts` |
 | Contact page structure | `app/contact/page.tsx` |
@@ -96,6 +96,15 @@ Changing these variables updates most of the website consistently. Keep sufficie
 4. Commit the change and publish it using the workflow below.
 
 Changing a file in GitHub does not update the public website until GitHub Pages is deployed.
+
+### Replace the homepage featured visual
+
+1. Prepare a landscape JPG, PNG, or WebP image.
+2. In the repository, open the `public` folder.
+3. Replace `homepage-featured-product.webp` using the exact same filename.
+4. Commit the change and publish it using the workflow below.
+
+This neutral filename controls the large visual on the homepage. It remains the same even when the featured product changes.
 
 ## 4. Safe GitHub editing and publishing workflow
 
@@ -165,6 +174,7 @@ Check that its status is **Published**, then refresh the Work page. Draft and ar
 
 - Confirm that the upload completed and the project shows a preview in Portfolio Studio.
 - For the portrait, confirm that `public/tersoo-yaji-portrait.jpeg` exists with the exact filename.
+- For the homepage visual, confirm that `public/homepage-featured-product.webp` exists with the exact filename.
 - Hard-refresh the page to bypass an older cached version.
 
 ### A GitHub deployment fails

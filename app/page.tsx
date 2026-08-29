@@ -44,7 +44,7 @@ export default function Home() {
             <div className="evidence-visual" aria-label="Geospatial and analytical portfolio preview">
               <div className="evidence-visual__image">
                 <img
-                  src="/projects/thumbs/alleged-tomahawk-strikes-in-nigeria.webp"
+                  src="/homepage-featured-product.webp"
                   alt="Geospatial analysis map from the portfolio"
                 />
               </div>
